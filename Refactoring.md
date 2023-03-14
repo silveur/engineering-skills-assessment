@@ -9,3 +9,8 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+The deterministicPartitionKey ensure a text key is being creating by checking the presence and type of the event input.
+It is clearer to group conditionals rather than having conditionals within other conditional blocks.
+The last step clearly ensure the length of the key.
+It is also safer to export the constants for the tests.
